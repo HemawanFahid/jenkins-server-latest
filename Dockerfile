@@ -57,7 +57,6 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 
 COPY /javaruntime /opt/java/openjdk # buildkit
 USER jenkins
-
 COPY jenkins-support /usr/local/bin/jenkins-support # buildkit
 COPY jenkins.sh /usr/local/bin/jenkins.sh # buildkit
 COPY tini-shim.sh /sbin/tini # buildkit
